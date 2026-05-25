@@ -2,10 +2,13 @@
 
 [中文说明](README.zh-CN.md)
 
-QuickDoc is a macOS utility built around a Finder Sync extension. It adds a practical `New File` submenu to Finder's context menu, and in v1.1 it also brings a dedicated settings app for menu visibility, extension status checks, menu ordering, and quick Finder actions.
+QuickDoc is a macOS utility built around a Finder Sync extension. It adds a practical `New File` submenu to Finder's context menu, and in v1.3 it also supports adding QuickDoc to the Finder toolbar so file creation can be invoked directly from the toolbar.
 
-## What's New in v1.1
+## What's New in v1.3
 
+- Added a Finder toolbar entry so QuickDoc can be added to Finder's toolbar and invoked directly
+- Finder toolbar support works across local Finder folders, external drives, cloud drive folders, and other monitored locations
+- Expanded Finder Sync monitoring to user folders, common directories, external volumes, and iCloud Drive, fixing previous external-drive and cloud-drive coverage gaps
 - Added a redesigned settings app with pages for `General`, `Permissions & Extensions`, `New File Types`, and `Finder Actions`
 - Added four app display modes: menu bar only, hidden in both menu bar and Dock, Dock only, and menu bar + Dock
 - Added launch at login, `Open in Terminal`, and `Copy Current Path` toggles
@@ -24,7 +27,7 @@ QuickDoc is a macOS utility built around a Finder Sync extension. It adds a prac
 
 ## Supported File Types
 
-Built-in file types in v1.1:
+Built-in file types in v1.3:
 
 - TXT
 - Markdown (`.md`)

@@ -15,6 +15,16 @@ final class FinderSync: FIFinderSync {
         fallback.isTemplate = true
         return fallback
     }()
+    private lazy var toolbarIcon: NSImage = {
+        if let image = Self.fixedSizeIcon(named: "工具栏", size: NSSize(width: 18, height: 18), isTemplate: true) {
+            return image
+        }
+
+        let fallback = NSImage(systemSymbolName: "doc.badge.plus", accessibilityDescription: "QuickDoc") ?? NSImage()
+        fallback.size = NSSize(width: 18, height: 18)
+        fallback.isTemplate = true
+        return fallback
+    }()
     private lazy var terminalIcon: NSImage = {
         Self.iconImage(named: "终端直达", size: NSSize(width: 18, height: 18))
         ?? NSImage(systemSymbolName: "terminal", accessibilityDescription: "在终端中打开")
@@ -131,7 +141,7 @@ final class FinderSync: FIFinderSync {
     }
 
     override var toolbarItemImage: NSImage {
-        menuIcon
+        toolbarIcon
     }
 
     override func menu(for menuKind: FIMenuKind) -> NSMenu? {
@@ -229,6 +239,26 @@ final class FinderSync: FIFinderSync {
         }
         image.size = size
         image.isTemplate = false
+        return image
+    }
+
+    private static func fixedSizeIcon(named resourceName: String, size: NSSize, isTemplate: Bool) -> NSImage? {
+        guard let url = resourceBundle.url(forResource: resourceName, withExtension: "png"),
+              let sourceImage = NSImage(contentsOf: url) else {
+            return nil
+        }
+
+        let image = NSImage(size: size)
+        image.lockFocus()
+        NSGraphicsContext.current?.imageInterpolation = .high
+        sourceImage.draw(
+            in: NSRect(origin: .zero, size: size),
+            from: .zero,
+            operation: .sourceOver,
+            fraction: 1
+        )
+        image.unlockFocus()
+        image.isTemplate = isTemplate
         return image
     }
 

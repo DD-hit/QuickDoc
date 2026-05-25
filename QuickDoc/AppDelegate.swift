@@ -829,7 +829,7 @@ private struct LanguageSettingsCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("软件语言")
                         .font(.headline)
-                    Text("点击后再选择语言，v1.1 暂不支持实际切换。")
+                    Text("点击后再选择语言，当前版本暂不支持实际切换。")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -1609,14 +1609,14 @@ private final class QuickDocSettingsModel: ObservableObject {
     func showLanguageComingSoon(languageName: String) {
         showAlert(
             title: "功能等待未来更新",
-            message: "\(languageName) 语言支持正在规划中，v1.1 暂未开放，敬请期待后续版本更新。"
+            message: "\(languageName) 语言支持正在规划中，当前版本暂未开放，敬请期待后续版本更新。"
         )
     }
 
     func showFeatureComingSoon(featureName: String) {
         showAlert(
             title: "功能等待未来更新",
-            message: "\(featureName) 功能正在规划中，v1.1 暂未开放，敬请期待后续版本更新。"
+            message: "\(featureName) 功能正在规划中，当前版本暂未开放，敬请期待后续版本更新。"
         )
     }
 
