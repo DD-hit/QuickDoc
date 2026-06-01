@@ -24,6 +24,24 @@ QuickDoc is a macOS utility built around a Finder Sync extension. It adds a prac
 - Secondary menu toggles stay open so multiple settings can be changed in one pass
 - Added an in-app update checker that asks for confirmation before downloading a new version, validates the ZIP package, replaces the previous app after quitting, relaunches QuickDoc, and confirms when the upgrade is complete
 
+### Menu bar shortcuts
+
+Configure Finder new-file types and optional quick actions directly from the menu bar.
+
+![QuickDoc v1.4.0 menu bar shortcuts](./photos/v1.4.0菜单栏.png)
+
+### Update confirmation
+
+When a newer version is available, QuickDoc asks for confirmation before downloading and installing it.
+
+![QuickDoc software update confirmation](./photos/软件检查更新.png)
+
+### Update complete
+
+After replacement succeeds, QuickDoc relaunches automatically and confirms that the upgrade is complete.
+
+![QuickDoc software update completed](./photos/软件更新成功.png)
+
 ## What's New in v1.3.1
 
 - Fixed an issue where creating a file on the Desktop could open an unwanted Finder window
@@ -71,12 +89,6 @@ Built-in file types in v1.4.0:
 Default-enabled types are `TXT`, `Markdown`, `Word`, `Excel`, `CSV`, `PowerPoint`, `JSON`, and `Blank file`.
 
 ## Screenshots
-
-### Menu bar controls
-
-Use the status bar icon to configure Finder new-file types, toggle Terminal and path-copy actions, open the full settings window, switch display mode, toggle launch at login, restart Finder, or jump to extension settings. Secondary toggles stay open while you make several changes.
-
-![QuickDoc menu bar UI](./photos/菜单栏界面.png)
 
 ### General settings
 
