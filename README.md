@@ -3,14 +3,12 @@
   <h1>QuickDoc</h1>
   <p>Create common files directly from Finder's right-click menu and toolbar.</p>
   <p>
-    <img src="./icons/laurel-left.svg" alt="" width="26" height="20">
     <a href="https://github.com/SkyImplied/QuickDoc/releases/tag/v1.4.0"><img src="https://img.shields.io/badge/version-v1.4.0-blue" alt="Version v1.4.0"></a>
     <img src="https://img.shields.io/badge/platform-macOS%2013%2B-lightgrey?logo=apple" alt="Platform macOS 13+">
     <img src="https://img.shields.io/badge/built%20with-Swift-F05138?logo=swift&logoColor=white" alt="Built with Swift">
     <a href="https://github.com/SkyImplied/QuickDoc/releases/download/v1.4.0/QuickDoc-1.4.0.dmg"><img src="https://img.shields.io/badge/download-DMG-brightgreen?logo=apple&logoColor=white" alt="Download DMG"></a>
     <a href="https://github.com/SkyImplied/QuickDoc/releases"><img src="https://img.shields.io/github/downloads/SkyImplied/QuickDoc/total?label=downloads" alt="Downloads"></a>
     <a href="https://github.com/SkyImplied/QuickDoc/stargazers"><img src="https://img.shields.io/github/stars/SkyImplied/QuickDoc?label=stars&color=yellow" alt="Stars"></a>
-    <img src="./icons/laurel-right.svg" alt="" width="26" height="20">
   </p>
   <p>
     English | <a href="README.zh-CN.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.ja.md">日本語</a>
