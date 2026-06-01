@@ -103,7 +103,9 @@ The general page manages launch behavior, display mode, right-click quick action
 
 After the extension is enabled, `New File` appears in Finder together with optional quick actions.
 
-![QuickDoc Finder context menu](./photos/右键菜单界面.png)
+<p align="center">
+  <img src="./photos/新版右键菜单界面.png" alt="QuickDoc Finder context menu" width="680">
+</p>
 
 ### Permissions and extensions
 

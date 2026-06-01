@@ -103,7 +103,9 @@ v1.4.0 内置支持：
 
 扩展启用后，Finder 右键中会出现“新建文件”，并可按需显示终端直达与路径复制功能。
 
-![QuickDoc Finder 右键菜单界面](./photos/右键菜单界面.png)
+<p align="center">
+  <img src="./photos/新版右键菜单界面.png" alt="QuickDoc Finder 右键菜单界面" width="680">
+</p>
 
 ### 权限与扩展
 
